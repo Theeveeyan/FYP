@@ -134,7 +134,7 @@ amazon_copy = amazon_df.copy()
 # In[16]:
 
 
-st.dataframe(amazon_df)
+
 
 
 # Data Modelling
@@ -310,7 +310,15 @@ ax.bar(model_names, f1)
 
 # In[28]:
 
+st.dataframe(amazon_df)
 
+review = st.text_input('Input a review in lowewrcase')
+review_vector = vectorizer.transform([review])
+if svm.predict(review_vector)==0
+    st.write("The review is Negative")
+else
+    st.write("The review is Positive")
+    
 fig_col1, fig_col2, fig_col3, fig_col4 = st.columns(4)
 with fig_col1:
     st.markdown("### Accuracy")
