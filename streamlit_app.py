@@ -32,6 +32,7 @@ st.set_page_config(
 
 
 st.title("Sentiment Analysis with Term Weighting Techniques")
+st.sidebar.success("Select a page above.")
 option = st.selectbox(
     'Which dataset would you like to choose?',
     ('Amazon', 'IMDb', 'Yelp'))
