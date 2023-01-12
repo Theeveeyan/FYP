@@ -19,7 +19,7 @@ from wordcloud import WordCloud, ImageColorGenerator
 
 # In[3]:
 
-
+st.title("Exploratory Data Analysis")
 option = st.selectbox(
     'Which dataset would you like to choose?',
     ('Amazon', 'IMDb', 'Yelp'))
