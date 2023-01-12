@@ -3,7 +3,6 @@ pandas
 numpy
 seaborn
 sklearn
-TfidfTransformer
 LogisticRegression
 SVC
 train_test_split
