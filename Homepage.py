@@ -22,7 +22,7 @@ from sklearn.metrics import confusion_matrix, roc_auc_score, recall_score, preci
 
 
 st.set_page_config(
-    page_title="Sentiment Analysis with Term Weighting Techniques",
+    page_title="Positive/Negative",
     page_icon="✅",
     layout="wide",
 )
@@ -31,7 +31,8 @@ st.set_page_config(
 # In[3]:
 
 
-st.title("Sentiment Analysis with Term Weighting Techniques")
+st.title("P/N")
+st.header("Sentiment Analysis with Term Weighting Techniques")
 st.sidebar.success("Select a page above.")
 option = st.selectbox(
     'Which dataset would you like to choose?',
