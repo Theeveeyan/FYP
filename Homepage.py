@@ -312,7 +312,7 @@ ax.bar(model_names, f1)
 # In[28]:
 
 st.dataframe(amazon_df)
-//
+"""
 review = st.text_input('Input a review in lowewrcase')
 review = review.lower()
 review = review.str.replace(r'[^\w\s]+', '')
@@ -325,7 +325,7 @@ if svm.predict(review_vector)==1:
     st.write("The review is Positive")
 else:
     st.write("The review is Negative")
-//    
+"""   
 fig_col1, fig_col2, fig_col3, fig_col4 = st.columns(4)
 with fig_col1:
     st.markdown("### Accuracy")
