@@ -285,7 +285,7 @@ with fig_col2:
 
 with fig_col3:
 #    st.markdown("### Negative Words")
-    st.write(fig1)
+    st.write(fig2)
 
 
 # In[29]:
