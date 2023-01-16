@@ -313,7 +313,7 @@ ax.bar(model_names, f1)
 # In[28]:
 
 
-review = st.text_input('Input a review in lowewrcase')
+review = st.text_input('Input your review')
 review = review.lower()
 review = re.sub(r'[^\w\s]+', '', review)
 review = ' '.join([word for word in review.split() if word not in stop_words])
