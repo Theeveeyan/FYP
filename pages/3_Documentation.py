@@ -20,6 +20,8 @@ st.subheader("Homepage")
 st.write("The homepage displays the dataset choosen and the evaluation done to compare between 2 different term weighting techniques.") 
 st.write("The term weighting techbniques that we are comparing are Term Frequency-Inverse Documnet Frequency (TF-IDF) and Information Gain (IG).") 
 st.write("We can choose the dataset from the drop down selection at the top of the page.")
+st.write("There is also a input bar where the user can input their own review to check")
+st.write("Then the model will predict the review and the result will be displayed as Positive or Negative Review")
 
 
 # In[ ]:
