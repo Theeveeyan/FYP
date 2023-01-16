@@ -323,6 +323,8 @@ review_untokenized = ' '.join(review_tokens)
 review_vector = vectorizer.transform([review_untokenized])
 if svm.predict(review_vector)==1:
     st.write("The review is Positive")
+elif review=="":
+    st.write("No input detected.")
 else:
    st.write("The review is Negative")
 
