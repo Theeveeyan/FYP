@@ -48,6 +48,50 @@ amazon_df=pd.read_csv(filepath,
 # In[5]:
 
 
+reviews = amazon_df["review"]
+total_words = 0
+total_reviews = 0
+for review in reviews:
+    words = review.split()
+    total_words += len(words)
+    total_reviews += 1
+average_words = total_words / total_reviews
+st.markdown("## Word Counts")
+
+positive_reviews = amazon_df[amazon_df["sentiment"] == 1]
+negative_reviews = amazon_df[amazon_df["sentiment"] == 0]
+
+positive_words = 0
+positive_reviews_count = 0
+for review in positive_reviews["review"]:
+    words = review.split()
+    positive_words += len(words)
+    positive_reviews_count += 1
+positive_average_words = positive_words / positive_reviews_count
+
+negative_words = 0
+negative_reviews_count = 0
+for review in negative_reviews["review"]:
+    words = review.split()
+    negative_words += len(words)
+    negative_reviews_count += 1
+negative_average_words = negative_words / negative_reviews_count
+
+plt.bar(["Positive","Negative","Overall"], [positive_average_words,negative_average_words,average_words], color=['green','red','cyan'])
+plt.xlabel("Sentiment")
+plt.ylabel("Average Number of Words")
+plt.title("AVG Number of Words per Review")
+wc_avg = plt.show()
+
+fig_col1, fig_col2 = st.columns(2)
+with fig_col1:
+    st.pyplot(wc_avg)
+    
+with fig_col2:
+    st.write("Average number of words in Overall dataset: " + str(average_words))
+    st.write("Average number of words in Positive reviews: " + str(positive_average_words))
+    st.write("Average number of words in Negative reviews: " + str(negative_average_words))
+
 amazon_df['review'] = amazon_df['review'].str.replace(r'[^\w\s]+', '')
 
 
