@@ -88,9 +88,9 @@ with fig_col1:
     st.pyplot(wc_avg)
     
 with fig_col2:
-    st.write("Average number of words in Overall dataset: " + str(average_words))
-    st.write("Average number of words in Positive reviews: " + str(positive_average_words))
-    st.write("Average number of words in Negative reviews: " + str(negative_average_words))
+    st.write("Average number of words in Overall dataset: {:.1f}".format(average_words))
+    st.write("Average number of words in Positive reviews: {:.1f}".format(positive_average_words))
+    st.write("Average number of words in Negative reviews: {:.1f}".format(negative_average_words))
 
 amazon_df['review'] = amazon_df['review'].str.replace(r'[^\w\s]+', '')
 
