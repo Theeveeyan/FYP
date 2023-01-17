@@ -77,11 +77,12 @@ for review in negative_reviews["review"]:
     negative_reviews_count += 1
 negative_average_words = negative_words / negative_reviews_count
 
+wc_avg = plt.figure(figsize=(15,8), facecolor='white')
 plt.bar(["Positive","Negative","Overall"], [positive_average_words,negative_average_words,average_words], color=['green','red','cyan'])
 plt.xlabel("Sentiment")
 plt.ylabel("Average Number of Words")
 plt.title("AVG Number of Words per Review")
-wc_avg = plt.show()
+plt.show()
 
 fig_col1, fig_col2 = st.columns(2)
 with fig_col1:
