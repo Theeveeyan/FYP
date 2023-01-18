@@ -270,7 +270,7 @@ print(allwords_pos)
 
 mostcommon_pos = FreqDist(allwords_pos).most_common(50)
 wordcloud = WordCloud(width=1600, height=800, background_color='black', color_func=lambda *args, **kwargs: (0,255,0)).generate(str(mostcommon_pos))
-wc_pos = plt.figure(figsize=(30,10), facecolor='black')
+wc_pos = plt.figure(figsize=(30,10), facecolor='white')
 plt.imshow(wordcloud, interpolation="bilinear")
 plt.axis('off')
 plt.title('Word Cloud for Positive Reviews', fontsize=100)
