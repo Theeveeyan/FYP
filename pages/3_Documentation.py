@@ -25,7 +25,8 @@ st.write("The project is titled Sentiment Analysis on Product Reviews with Term 
 st.subheader("Homepage")
 st.write("The homepage displays the dataset choosen and the evaluation done to compare between 2 different term weighting techniques. The term weighting techbniques "
          +"that we are comparing are Term Frequency-Inverse Documnet Frequency (TF-IDF) and Information Gain (IG). We can choose the dataset from the drop down "
-         +"selection at the top of the page.") 
+         +"selection at the top of the page. Choose the dataset based on the situation.")
+st.warning("For product review choose Amazon. For movie review choose IMDb. For restaurant review choose Yelp.")     
 st.success("There is also a input bar where the user can input their own review to check. Then the model will predict the review and the result will be displayed as "
          +"Positive or Negative Review. The prediction is done by SVM Classifier and it uses TF-IDF as the feature selection method.")
 
