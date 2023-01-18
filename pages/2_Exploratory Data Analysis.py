@@ -270,10 +270,10 @@ print(allwords_pos)
 
 mostcommon_pos = FreqDist(allwords_pos).most_common(50)
 wordcloud = WordCloud(width=1600, height=800, background_color='black', color_func=lambda *args, **kwargs: (0,255,0)).generate(str(mostcommon_pos))
-wc_pos = plt.figure(figsize=(30,10), facecolor='white')
+wc_pos = plt.figure(figsize=(30,10), facecolor='black')
 plt.imshow(wordcloud, interpolation="bilinear")
 plt.axis('off')
-plt.title('Word Cloud for Positive Words', fontsize=100)
+plt.title('Word Cloud for Positive Reviews', fontsize=100)
 plt.tight_layout(pad=0)
 plt.show()
 
@@ -296,7 +296,7 @@ wordcloud = WordCloud(width=1600, height=800, background_color='black', color_fu
 wc_neg = plt.figure(figsize=(30,10), facecolor='white')
 plt.imshow(wordcloud, interpolation="bilinear")
 plt.axis('off')
-plt.title('Word Cloud for Negative Words', fontsize=100)
+plt.title('Word Cloud for Negative Reviews', fontsize=100)
 plt.tight_layout(pad=0)
 plt.show()
 
@@ -304,7 +304,7 @@ plt.show()
 # In[28]:
 
 
-st.markdown("### EDA on Common Words found in the dataset")
+st.markdown("### EDA on Overall dataset")
 fig_col1, fig_col2 = st.columns(2)
 with fig_col1:
     st.write(fig)
@@ -316,7 +316,7 @@ with fig_col2:
 # In[29]:
 
 
-st.markdown("### EDA on Positive Words found in the dataset")
+st.markdown("### EDA on Positive Reviews")
 fig_col1, fig_col2 = st.columns(2)
 with fig_col1:
     st.write(fig1)
@@ -328,7 +328,7 @@ with fig_col2:
 # In[30]:
 
 
-st.markdown("### EDA on Positive Words found in the dataset")
+st.markdown("### EDA on Negative Reviews")
 fig_col1, fig_col2 = st.columns(2)
 with fig_col1:
     st.write(fig2)
