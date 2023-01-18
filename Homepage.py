@@ -322,11 +322,11 @@ review_tokens = [stemmer.stem(word) for word in review_tokens]
 review_untokenized = ' '.join(review_tokens)
 review_vector = vectorizer.transform([review_untokenized])
 if svm.predict(review_vector)==1:
-    st.write("The review is Positive")
+    st.write("The review is Positive (SVM Classifier)")
 elif review=="":
     st.write("No input detected.")
 else:
-   st.write("The review is Negative")
+   st.write("The review is Negative (SVM Classifier)")
 
 st.dataframe(amazon_df)
 
