@@ -16,7 +16,7 @@ st.subheader("About the Project")
 st.write("The project is titled Sentiment Analysis on Product Reviews with Term Weighting Techniques. The main objective of this project is to compare 2 famous term "
          + "weighting techniques which are Term Frequency-Inverse Document Frequency (TF-IDF) and Information Gain (IG). This project is also aimed to provide a "
          + "a platform for product sellers and customers to analyse online reviews. Product sellers can also gain more insight from online reviews by using this app. "
-         + "Product sellers can gain more insight from online reviews and further understand about their product and improve them in the future.
+         + "Product sellers can gain more insight from online reviews and further understand about their product and improve them in the future.")
 
 
 # In[3]:
