@@ -304,7 +304,7 @@ plt.show()
 # In[28]:
 
 
-st.markdown("### EDA on Overall dataset")
+st.markdown("### Analysis on Overall Dataset")
 fig_col1, fig_col2 = st.columns(2)
 with fig_col1:
     st.write(fig)
@@ -316,7 +316,7 @@ with fig_col2:
 # In[29]:
 
 
-st.markdown("### EDA on Positive Reviews")
+st.markdown("### Analysis on Positive Reviews")
 fig_col1, fig_col2 = st.columns(2)
 with fig_col1:
     st.write(fig1)
@@ -328,7 +328,7 @@ with fig_col2:
 # In[30]:
 
 
-st.markdown("### EDA on Negative Reviews")
+st.markdown("### Analysis on Negative Reviews")
 fig_col1, fig_col2 = st.columns(2)
 with fig_col1:
     st.write(fig2)
