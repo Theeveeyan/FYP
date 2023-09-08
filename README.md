@@ -1,13 +1,13 @@
-# 📦 Streamlit App Starter Kit 
+# ✅ P/N
 ```
 ⬆️ (Replace above with your app's name)
 ```
 
-Description of the app ...
+The app is about sentiment analysis. Application was created for my Final year Project in Data Science. It shows the difference between term weighting techniques in sentiment analysis.
 
 ## Demo App
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://starter-kit.streamlitapp.com/)
+[![Streamlit App](https://theeveeyan-fyp-homepage-xoxvhf.streamlit.app/)
 
 ## Section Heading
 
