@@ -4,5 +4,5 @@ The app is about sentiment analysis. Application was created for my Final year P
 
 ## Demo App
 
-[![P/N](https://theeveeyan-fyp-homepage-xoxvhf.streamlit.app/)
+[P/N](https://theeveeyan-fyp-homepage-xoxvhf.streamlit.app/)
 
