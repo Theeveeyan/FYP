@@ -1,6 +1,6 @@
 # ✅ P/N
 
-The app is about sentiment analysis. Application was created for my Final year Project in Data Science. It shows the difference between term weighting techniques in sentiment analysis.
+The app is about sentiment analysis. Application was created for my Final Year Project in Data Science. It shows the difference between term weighting techniques in sentiment analysis.
 
 ## Demo App
 
